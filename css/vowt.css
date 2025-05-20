@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lilita+One&display=swap');
+
+:root { 
+    --font-weight: 300; 
+
+    --primary: #E79EB1; 
+    --secondary: #222;
+
+    --font-primary: 'Inter', sans-serif;
+	--font-secondary: 'Lilita one', sans-serif;
+   
+    --text: #60546A;
+    
+    --btn-primary:var(none);
+    --btn-primary-hover:var(none);
+    
+    --green:#92BC57;
+	--purple: #B580AE;
+	--pink: #E79EB1;
+	--blue: #00B3C7;
+	--beige: #F0AA88;
+	--red: #EA5D5D;
+
+    
+    --container-lg:var(none);
+
+    --max-width-logo: 125px;
+
+}

@@ -1,0 +1,13 @@
+.product-thumb .image{position: relative;}
+
+.product-thumb .product-seals{z-index: 20; width: 100%;}
+.product-thumb .product-seals-top{top: 0; left: 0; z-index: 20; display: flex; margin-top: 16px;}
+.product-thumb .product-seals-bottom{bottom: 0; left: 0; z-index: 20;}
+
+.product-thumb .product-seal{display: table; width: 100%;}
+.product-thumb .product-seal.align-left{float:left;}
+.product-thumb .product-seal.align-right{float:right;}
+.product-thumb .product-seal.align-center{margin:auto;}
+
+.module-product-seal-product{margin:10px 0}
+.module-product-seal-product .product-seal{display: inline-block;}

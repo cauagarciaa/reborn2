@@ -1,0 +1,11 @@
+/* #menu{background-color: #fff;}
+.menu{margin:0; gap:15px}
+.menu > li > a{padding:10px; display: block;}
+.menu > li > a span{display: flex; gap: 10px;}
+.menu a{color: var(--texto);}
+
+.menu-mobile a{color: var(--texto); padding: 10px; display: block; width: 100%;}
+.menu-mobile {list-style: none; padding:0; margin:0;}
+.menu-mobile > li > a{font-size: 18px;}
+.menu-mobile .submenu-mobile{padding-left: 10px;}
+.menu-mobile .grandchild{color: #777; padding-left: 20px;} */

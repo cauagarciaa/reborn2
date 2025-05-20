@@ -1,0 +1,101 @@
+/* Preços Miniatura  */
+:root { 
+    --price-thumb-price-old-color: var(--red); /* color|Cor do preço antigo|Preço Antigo */
+    --price-thumb-price-old-size: 14px; /* text|Tamanho do preço antigo|Preço Antigo */
+    --price-thumb-price-old-weight: 500; /* text|Peso do preço antigo|Preço Antigo */
+    --price-thumb-price-old-margin-top: 0; /* text|Espaçamento em cima do preço antigo|Preço Antigo */
+    --price-thumb-price-old-margin-bottom: 0; /* text|Espaçamento em baixo do preço antigo|Preço Antigo */
+    --price-thumb-price-old-order: 0; /* text|Ordem do preço antigo|Preço Antigo */
+    
+    --price-thumb-price-color: #FA0020; /* color|Cor do preço|Preço */
+    --price-thumb-price-size: 16px; /* text|Tamanho do preço|Preço */
+    --price-thumb-price-weight: 500; /* text|Peso do preço|Preço */
+    --price-thumb-price-margin-top: 0px; /* text|Espaçamento em cima do preço|Preço */
+    --price-thumb-price-margin-bottom: 0; /* text|Espaçamento em baixo do preço|Preço */
+    --price-thumb-price-order: -1; /* text|Ordem do preço|Preço */
+    
+    --price-thumb-pix-value-color: var(--text); /* color|Cor do pix|Valor Pix */
+    --price-thumb-pix-value-size: 23px; /* text|Tamanho do pix|Valor Pix */
+    --price-thumb-pix-value-weight: 700; /* text|Peso do pix|Valor Pix */
+    --price-thumb-pix-value-margin-top: 0; /* text|Espaçamento em cima do pix|Valor Pix */
+    --price-thumb-pix-value-margin-bottom: 0px; /* text|Espaçamento em baixo do pix|Valor Pix */
+    --price-thumb-pix-value-order: 1; /* text|Ordem do pix|Valor Pix */
+
+    --price-thumb-pix-text-color: var(--text); /* color|Cor do texto do pix|Texto Pix */
+    --price-thumb-pix-text-size: 11px; /* text|Tamanho do texto do pix|Texto Pix */
+    --price-thumb-pix-text-weight: 400; /* text|Peso do texto do pix|Texto Pix */
+    --price-thumb-pix-text-margin-top: 0; /* text|Espaçamento em cima do texto do pix|Texto Pix */
+    --price-thumb-pix-text-margin-bottom: 0px; /* text|Espaçamento em baixo do texto do pix|Texto Pix */
+    --price-thumb-pix-text-order: 2; /* text|Ordem do texto do pix|Texto Pix */
+
+    --price-thumb-installment-color: #686969; /* color|Cor do parcelamento|Parcelamento */
+    --price-thumb-installment-size: 12px; /* text|Tamanho do parcelamento|Parcelamento */
+    --price-thumb-installment-weight: 400; /* text|Peso do parcelamento|Parcelamento */
+    --price-thumb-installment-margin-top: 0; /* text|Espaçamento em cima do parcelamento|Parcelamento */
+    --price-thumb-installment-margin-bottom: 0; /* text|Espaçamento em baixo do parcelamento|Parcelamento */
+    --price-thumb-installment-order: 3; /* text|Ordem do parcelamento|Parcelamento */
+}
+
+.module-product-price{display: flex; flex-direction: column; min-height: 66px; justify-content: end;}
+.module-product-price > div:not(:last-child) {margin-bottom: 3px;}
+.container-price-pix {order: 1;}
+
+.module-product-price .pix-value{
+    color: var(--price-thumb-pix-value-color);
+    font-size: var(--price-thumb-pix-value-size);
+    font-weight: var(--price-thumb-pix-value-weight);
+    margin-top: var(--price-thumb-pix-value-margin-top);
+    margin-bottom: var(--price-thumb-pix-value-margin-bottom);
+    order: var(--price-thumb-pix-value-order);
+	letter-spacing: -1.28px;
+	line-height: normal;
+}
+
+.module-product-price .pix-text{
+    color: var(--price-thumb-pix-text-color);
+    font-size: var(--price-thumb-pix-text-size);
+    font-weight: var(--price-thumb-pix-text-weight);
+    margin-top: var(--price-thumb-pix-text-margin-top);
+    margin-bottom: var(--price-thumb-pix-text-margin-bottom);
+    order: var(--price-thumb-pix-text-order);
+}
+
+.module-product-price .price{
+    color: var(--price-thumb-price-color, var(--primary));
+    font-size: var(--price-thumb-price-size);
+    font-weight: var(--price-thumb-price-weight);
+    margin-top: var(--price-thumb-price-margin-top);
+    margin-bottom: var(--price-thumb-price-margin-bottom);
+    order: var(--price-thumb-price-order);
+    text-decoration: line-through;
+	display: none;
+}
+
+.module-product-price .price-old{
+    color: var(--price-thumb-price-old-color);
+    font-size: var(--price-thumb-price-old-size);
+    font-weight: var(--price-thumb-price-old-weight);
+    margin-top: var(--price-thumb-price-old-margin-top);
+    margin-bottom: var(--price-thumb-price-old-margin-bottom);
+    order: var(--price-thumb-price-old-order);
+	letter-spacing: -0.56px;
+	line-height: normal;
+}
+
+.module-product-price .installment{
+    color: var(--text);
+    font-size: var(--price-thumb-installment-size);
+    font-weight: var(--price-thumb-installment-weight);
+    margin-top: var(--price-thumb-installment-margin-top);
+    margin-bottom: var(--price-thumb-installment-margin-bottom);
+    order: var(--price-thumb-installment-order);
+	letter-spacing: -0.56px;
+	line-height: normal;
+}
+
+@media (max-width: 991px) {
+	.module-product-price .pix-value {font-size: 30px;}
+	.module-product-price .price-old {font-size: 14px;}
+	.module-product-price .pix-text {font-size: 16px;}
+	.module-product-price .installment {font-size: 16px;}
+}

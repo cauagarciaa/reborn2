@@ -1,0 +1,7 @@
+.text-disclaimer{text-align: center;}
+@media (max-width: 991px){
+footer .text-disclaimer{
+  margin: 0 15px !important;
+  font-size: 12px;
+}
+}

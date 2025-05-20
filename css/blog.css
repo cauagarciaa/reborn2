@@ -1,0 +1,77 @@
+/* .blog-content-home {
+    margin: 0 0 40px;
+} */
+
+.blog-thumb {
+    border:solid 1px #EEEEEE; position: relative; overflow: hidden; border-radius: 4px; background: #fff;
+}
+
+.blog-content-home {background: #fafafa;}
+.blog-content-home .row {row-gap: 24px;}
+#blog_post-blog-category h2 {font-size: 22px; color: #4d4d4d;}
+.blog-thumb img{border-radius: 4px;}
+.blog-image{position: relative; display: block;}
+.blog-date-text{position: absolute; top: 10px; right: 10px;}
+.blog-date-text > div{padding: 4px; background-color: var(--green); color: #fff; margin-bottom: 2px; text-transform: uppercase; text-align: center; font-size: 16px; font-weight: 500; line-height: 16px;}
+
+.blog-thumb h3{font-size: 14px; padding-bottom: 10px; border-bottom: solid 1px #EEEEEE; font-weight: 500; line-height: 18px; color: var(--text);}
+
+.text-post-blog{padding: 15px; font-size: 12px; color:#9D9D9D; min-height: 190px; line-height: 18px;}
+
+.blog-thumb .readmore{margin-top: 10px;}
+.blog-thumb .readmore a{font-size: 10px; color: var(--primary); text-transform: uppercase;}
+
+#blog_embaixadores{background: #000; color: #fff; padding-bottom: 80px;}
+#blog_embaixadores a{color: #fff;}
+
+.embaixadores-title{text-align: center; padding: 40px 0;}
+.embaixadores-title h2{color: #fff; margin: 40px auto 16px; letter-spacing: 12px; text-transform: uppercase;}
+.embaixadores-title h3{color: #4d4d4d; font-size: 16px; letter-spacing: 12px; text-transform: uppercase;}
+.embaixadores-text{font-size: 16px; color: #fff; text-transform: uppercase; letter-spacing: 4px; padding-left: 20px 0 30px;}
+.embaixadores-text h3{font-size: 32px; font-weight: 500; color: #fff; text-transform: uppercase;}
+.embaixadores-text .readmore a{font-size: 20px; color: #fff; text-transform: uppercase; letter-spacing: 0;}
+.embaixadores-text .readmore a i{color: #fff;}
+.embaixadores-text .readmore{margin:20px 0}
+.embaixadores-thumb{margin-bottom: 70px;}
+.embaixadores-thumb img{filter: grayscale(100%);}
+.embaixadores-thumb img:hover{filter: grayscale(0%);}
+#embaixadores_content .my-jobs {font-size: 20px; margin-bottom: 24px;}
+.img-jobs {margin: 10px 0;}
+
+.embaixadores-links{display: flex; gap: 20px;}
+.embaixadores-links a i{color: #fff; font-size: 25px;}
+
+#embaixadores_content h2{font-size: 24px; color: #fff; letter-spacing: 6px; text-transform: uppercase;}
+#embaixadores_content .embaixadores-links{margin:30px 0}
+
+.short-description{text-transform: uppercase; letter-spacing: 3px;}
+
+.see-all{margin:60px auto; display: table; font-size: 12px; color: #4d4d4d; letter-spacing: 4px; text-transform: uppercase; font-weight: 500;}
+
+#home-embaixadores{background-color: #1a1a1a; width: 100%; clear: both;}
+#home-embaixadores .embaixador-image{position: relative; display: block;}
+#home-embaixadores .embaixador-image img{filter: grayscale(100%);}
+#home-embaixadores .embaixador-image .text{position: absolute; bottom: 0; left: 0; padding: 20px; text-align: center; width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(26, 26, 26, 1) 0%, rgba(0,0,0,0) 100%);
+}
+#home-embaixadores .embaixador-image .text h3{font-size: 18px; font-weight: 500; color: #fff; letter-spacing: 4px; text-transform: uppercase;}
+#home-embaixadores .embaixador-image .text h4{font-size: 12px; color: #fff; text-transform: uppercase; letter-spacing: 4px; font-weight: 300; line-height: 20px ;}
+
+#home-embaixadores .embaixador:hover img{filter: grayscale(0);}
+#home-embaixadores h5{font-size: 16px; font-weight: 500; text-transform: uppercase; color: #fff; letter-spacing: 4px; display: flex; gap: 5px; background: var(--primary); padding: 3px 10%; margin: 15px 0 0;}
+#home-embaixadores .container-cupom {display: flex; justify-content: center; align-items: center;}
+
+
+.embaixadores-footer{text-align: center; margin:40px 0 0; display: table; width: 100%; padding-bottom: 40px;}
+.embaixadores-footer h3{font-size:20px; margin:0; margin-bottom: 24px; font-weight: 500; color: #fff; text-transform: uppercase; letter-spacing: 2.9px;}
+.embaixadores-footer .see-all{margin:0 auto;}
+
+@media (max-width: 991px) {
+    .embaixadores-title h2 {font-size: 16px; letter-spacing: 5px;}
+    .embaixadores-title h3 {font-size: 14px; letter-spacing: 5px; line-height: 25px;}
+    #home-embaixadores .embaixador-image .text {padding: 20px 5px;}
+    #home-embaixadores .embaixador-image .text h3 {font-size: 14px;}
+    #home-embaixadores .embaixador-image .text h4 {font-size: 10px;}
+	#id-blog .read-more {font-size: 10px;}
+}

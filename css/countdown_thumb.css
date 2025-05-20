@@ -1,0 +1,42 @@
+/* Contador regressivo Miniatura */
+:root { 
+    --product-thumb-countdown-seal-background: var(--primary); /* color|Cor do fundo do selo */
+    --product-thumb-countdown-seal-color: #fff; /* color|Cor do texto do selo */
+    --product-thumb-countdown-seal-weight: 500; /* text|Peso do texto do selo */
+    --product-thumb-countdown-seal-position: 0; /* select|Posição do selo [Esquerda:0,Direita:auto] */
+
+    --product-thumb-countdown-time-background: var(--primary); /* color|Cor do fundo do contador */
+    --product-thumb-countdown-time-color: #fff; /* color|Cor do texto do contador */
+    --product-thumb-countdown-border: var(--primary); /* color|Cor da borda do contador */
+    --product-thumb-countdown-title-color: #fff; /* color|Cor do titulo do contador */
+    --product-thumb-countdown-title-size: 14px; /* text|Tamanho do titulo do contador */
+}
+.product-countdown > div{font-weight:bold; font-size: 14px;}
+.product-thumb-countdown{margin:0 auto 12px; width:100%; border:solid 1px var(--product-thumb-countdown-border, var(--text)); display: flex; background: var(--primary); padding: 4px; justify-content: center;}
+.product-thumb-countdown h5{font-size: var(--product-thumb-countdown-title-size); margin:0; padding:5px; text-align: center; color: var(--product-thumb-countdown-title-color, var(--text)); display: flex; align-items: center; gap: 3px; line-height: normal;}
+.product-thumb-countdown i{font-size:20px; padding:10px}
+.product-thumb-countdown-time{background-color: var(--product-thumb-countdown-time-background, var(--text)); color: var(--product-thumb-countdown-time-color, #fff);}
+
+.product-thumb-countdown .product-countdown {gap: 10px;}
+.product-thumb .product-thumb-countdown {display: none;}
+
+.countdown_seal{left: 16px; right: 0; top: 20px; position: absolute; z-index: 1;}
+.countdown_seal span{
+    font-size: 10px;
+    color: #fff;
+    background-color: var(--red);
+    font-weight: 700;
+    border-radius: 4px;
+	padding: 3px 10px;
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	line-height: normal;
+}
+
+@media (max-width: 1400px) {
+    .product-thumb-countdown {flex-direction: column;}
+    .product-thumb-countdown h5 {font-size: 14px; justify-content: center;}
+    .product-thumb-countdown img {max-width: 20px;}
+    .product-thumb-countdown .product-countdown {gap: 10px;}
+}

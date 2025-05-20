@@ -1,0 +1,55 @@
+#menu .menu_pro > .navbar-nav > li > a{font-size: 14px; text-transform: uppercase; font-weight: 700; padding: 16px 30px; color: #fff;}
+#menu .menu_pro > .navbar-nav > li:nth-child(1n) > a{color: var(--red);}
+#menu .menu_pro > .navbar-nav > li:nth-child(2n) > a{color: var(--purple);}
+#menu .menu_pro > .navbar-nav > li:nth-child(3n) > a{color: var(--green);}
+#menu .menu_pro > .navbar-nav > li:nth-child(4n) > a{color: var(--pink);}
+#menu .menu_pro > .navbar-nav > li:nth-child(5n) > a{color: var(--blue);}
+#menu .menu_pro > .navbar-nav > li:nth-child(6n) > a{color: var(--beige);}
+#menu .menu_pro > .navbar-nav > li > a:hover{text-decoration: underline; text-underline-position: under;}
+.bar-under-menu {height: 8px; width: 100%; display: flex;}
+.bar-under-menu > div:nth-child(1) {width: 25%; height: 100%; background: var(--pink);}
+.bar-under-menu > div:nth-child(2) {width: 25%; height: 100%; background: var(--purple);}
+.bar-under-menu > div:nth-child(3) {width: 25%; height: 100%; background: var(--blue);}
+.bar-under-menu > div:nth-child(4) {width: 25%; height: 100%; background: var(--beige);}
+.menu_pro > .navbar-nav{width: 100%; justify-content: center; display: flex;}
+.menu_pro .dropdown-menu{border-radius: 0 !important; border:none; padding: 15px;}
+.menu_pro .last-link{color: var(--red);}
+
+.menu-mobile {display: flex; flex-direction: column; gap: 5px;}
+.menu-mobile > li > a{font-size: 16px; text-transform: uppercase; text-transform: uppercase; font-weight: 500;}
+.menu-mobile > li > a:hover{background: rgba(0, 0, 0, 0.1);}
+.menu-mobile .last-link{margin-bottom: 30px;}
+
+@media(max-width:1400px){
+    #menu .menu_pro > .navbar-nav > li > a{padding: 10px 15px !important; font-size: 12px;}
+}
+@media(min-width:991px){
+    .dropdown:hover > .dropdown-menu{
+        top: 100%;
+        left: 0;
+        display: block;
+    }
+    .dropend:hover > .dropdown-menu{
+        top: 0;
+        right: auto;
+        left: 100%;
+        margin-top: 0;
+        margin-left: var(--bs-dropdown-spacer);
+        display: block;
+    }
+    .dropstart:hover > .dropdown-menu{
+        top: 0;
+        right: 100%;
+        left: auto;
+        margin-top: 0;
+        margin-right: var(--bs-dropdown-spacer);
+        display: block;
+    }
+
+}
+
+@media (max-width: 991px) {
+	#menu{background: #fff;}
+	#menu .container {max-width: 100%;}
+}
+

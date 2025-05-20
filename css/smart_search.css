@@ -1,0 +1,69 @@
+/* Busca inteligente */
+:root { 
+    --smart-search-title-color: #000; /* text|Cor do titulo */
+    --smart-search-title-size: 14px; /* text|Tamanho do titulo */
+    --smart-search-title-weight: normal; /* text|Peso do titulo */
+    
+    --smart-search-price-color: var(none); /* text|Cor do Preço */
+    --smart-search-price-size: 12px; /* text|Tamanho do Preço */
+    --smart-search-price-weight: normal; /* text|Peso do Preço */
+}
+
+header .search {
+    position: relative;
+}
+
+#smart_search_results {
+    width: 100%;
+    position: absolute;
+    top: 39px;
+    z-index: 10;
+    left: 0;
+    background: #fff;
+    border: #eee solid 1px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    overflow-x: hidden;
+}
+
+#smart_search_results .product {
+    border-bottom: solid 1px #eee;
+    padding:10px;
+}
+
+#smart_search_results .product:hover{
+    background-color: #ddd;
+}
+
+#smart_search_results .product:hover #seta{
+    color: var(--secondary);
+}
+
+#smart_search_results::-webkit-scrollbar {
+    background: #eee !important;
+    width: 10px
+}
+
+#smart_search_results::-webkit-scrollbar-thumb {
+    background: var(--primary) !important;
+    width: 40px;
+}
+
+#smart_search_results h4 {
+    padding:0 10px;
+    font-size:var(--smart-search-title-size, var(--primary));
+    color:var(--smart-search-title-color, var(--primary));
+}
+
+#smart_search_results h5{
+    padding-left: 10px;
+    margin: 0;
+    font-size:var(--smart-search-price-size, var(--primary));
+    color:var(--smart-search-price-color, var(--primary));
+}
+
+.product-search-bar:hover{
+    text-decoration: none;
+    background-color: #ddd;
+}

@@ -1,0 +1,23 @@
+/* Banners  */
+:root { 
+    --banner-pro-arrow-color:var(--none); /*color|Cor das setas*/
+}
+
+/* title */
+.banner_pro_title{text-align: center;}
+.banner_pro_title h2{margin-bottom: 24px;}
+
+/* navigation */
+.vowt-prev,.vowt-next{position: absolute; top: 50%; margin-top: -15px; z-index: 30000; cursor: pointer; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border-radius: 100px; background: var(--red);}
+.vowt-prev svg,.vowt-next svg{height: 14px; width: 14px;}
+.vowt-prev svg path,.vowt-next svg path{fill: #fff;}
+
+.vowt-prev i,.vowt-next i{font-size: 30px; color: var(--primary);}
+
+.vowt-prev{left: 10px;}
+.vowt-next{right: 10px;}
+
+/* pagination */
+.vowt-pagination{text-align: center; width: 100%;}
+.vowt-pagination.inside{position: absolute; bottom: 0; z-index: 2;}
+.swiper-pagination-bullet-active{background:var(--primary);}

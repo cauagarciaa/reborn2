@@ -1,0 +1,18 @@
+#newsletter{background-color: var(--blue); padding: 30px 0;}
+#newsletter .input-group {gap: 8px;}
+#newsletter h2{color: #fff; margin:0; font-size: 24px; font-family: 'Lilita One', sans-serif;}
+#newsletter h2::after{display: none;}
+#newsletter .container-checkbox-newsletter {display: flex; gap: 10px; align-items: center;}
+#newsletter .btn-newsletter {background: var(--green) !important; color: #fff !important; border-radius: 4px; padding: 16px 32px; font-size: 14px; border: none;}
+#newsletter span {color: var(--primary);}
+#newsletter #label-confirm-newsletter {color: #ececec; font-size: 12px; font-weight: 400;}
+#newsletter input {border-radius: 4px;}
+#newsletter .text-danger {position: absolute; color: #fff !important; top: -22px;}
+
+#newsletter .container-checkbox-newsletter input {position: relative; margin: 0; appearance: none;}
+#newsletter .container-checkbox-newsletter input:checked::after {content: ''; position: absolute; left: 8px; top: 4px; width: 5px; height: 10px; border: solid #fff; border-width: 0 2px 2px 0;transform: rotate(45deg);}
+#newsletter .container-checkbox-newsletter input:checked::before {border-color: var(--primary); background: var(--primary);}
+#newsletter .container-checkbox-newsletter input::before {content: ''; display: block; width: 22px; height: 22px; border: 2px solid #c6cfd6; border-radius: 4px; background-color: transparent;}
+@media (max-width: 767px) {
+    #newsletter h2 {font-size: 16px; margin-bottom: 24px;}
+}
